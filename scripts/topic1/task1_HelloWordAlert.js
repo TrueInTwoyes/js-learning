@@ -1,3 +1,3 @@
-function task1_alert() {
+function alertHelloWorld() {
     alert("Hello world!");
 }

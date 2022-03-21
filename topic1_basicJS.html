@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <title>Тема 1. Basic JavaScript</title>
     <script src="scripts/topic1/task1_HelloWordAlert.js"></script>
-    <script src="scripts/topic1/task2_VariablesAlert.js"></script>
+    <script src="scripts/topic1/task2_NameAlert.js"></script>
     <script src="scripts/topic1/task3_Prompt.js"></script>
-    <script src="scripts/topic1/task4_FixSum.js"></script>
+    <script src="scripts/topic1/task4_Sum.js"></script>
     <script src="scripts/topic1/task5_IfElse.js"></script>
     <script src="scripts/topic1/task6_SignNumber.js"></script>
     <script src="scripts/topic1/task7_TernOperator.js"></script>
@@ -32,47 +32,47 @@
         <ul>
             <h2><a>Задача 1. Hello world</a></h2>
             <p>Задача: вызвать алерт подключенный из внешнего скрипта</p>
-            <input type="button" value="Решение" onclick="task1_alert()"></input>
+            <input type="button" value="Решение" onclick="alertHelloWorld()"></input>
         </ul>
         <ul>
             <h2><a>Задача 2. Работа с переменными</a></h2>
             <p>Задача: присвоить переменной admin значение переменной name</p>
-            <input type="button" value="Решение" onclick="task2_alert()"></input>
+            <input type="button" value="Решение" onclick="alertName()"></input>
         </ul>
         <ul>
             <h2><a>Задача 3. Взаимодействие: alert, prompt, confirm</a></h2>
             <p>Задача: вызвать модальное окно где нужно вписать имя, затем вывести его в алерте</p>
-            <input type="button" value="Решение" onclick="prompt_and_alert()"></input>
+            <input type="button" value="Решение" onclick="promptAndAlertName()"></input>
         </ul>
         <ul>
             <h2><a>Задача 4. Сложение переменных</a></h2>
             <p>Задача: исправить сложение перменных</p>
-            <input type="button" value="Решение" onclick="correctly_sum()"></input>
+            <input type="button" value="Решение" onclick="sum()"></input>
         </ul>
         <ul>
             <h2><a>Задача 5. Оператор if </a></h2>
             <p>Задача: вызвать модальное окно где нужно вписать официальное название JavaScript. <br>В ответном алерте вывести результат: правильно/не правильно</p>
-            <input type="button" value="Решение" onclick="name_JS()"></input>
+            <input type="button" value="Решение" onclick="checkNameJS()"></input>
         </ul>
         <ul>
             <h2><a>Задача 6. Знак числа</a></h2>
             <p>Задача: через конструкцию операторов if вывести в алерт 1 (если число > 0), -1 (если число < 0), 0 (если число = 0)</p>
-            <input type="button" value="Решение" onclick="sign_number()"></input>
+            <input type="button" value="Решение" onclick="checkSignNumber()"></input>
         </ul>       
         <ul>
             <h2><a>Задача 7. Тернарный оператор</a></h2>
             <p>Задача: переписать конструкцию if с использованием тернарного оператора</p>
-            <input type="button" value="Решение" onclick="tern_operator()"></input>
+            <input type="button" value="Решение" onclick="compare()"></input>
         </ul>
         <ul>
             <h2><a>Задача 8. Несколько тернарных операторов</a></h2>
             <p>Задача: переписать конструкцию if с использованием нескольких тернарных операторов</p>
-            <input type="button" value="Решение" onclick="some_tern_operator()"></input>
+            <input type="button" value="Решение" onclick="checkLogin()"></input>
         </ul>
         <ul>
             <h2><a>Задача 9. Проверка значения из диапазона</a></h2>
             <p>Задача: напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно</p>
-            <input type="button" value="Решение" onclick="logic_operator()"></input>
+            <input type="button" value="Решение" onclick="compareAge()"></input>
         </ul>
         <ul>
             <h2><a>Задача 10. Проверка логина</a></h2>
@@ -83,20 +83,20 @@
             <p>Если введён пароль «Я главный», то выводить «Здравствуйте!»,</p>
             <p>Иначе – «Неверный пароль»,</p>
             <p>При отмене – «Отменено».</p>
-            <input type="button" value="Решение" onclick="check_login()"></input>
+            <input type="button" value="Решение" onclick="checkLogin()"></input>
         </ul>
         <ul>
             <h2><a>Задача 11. Повторять цикл, пока ввод неверен</a></h2>
             <p>Напишите цикл, который предлагает prompt ввести число, большее 100. Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее.</p>
             <p>Цикл должен спрашивать число пока либо посетитель не введёт число, большее 100, либо не нажмёт кнопку Отмена (ESC).</p>
             <p>Предполагается, что посетитель вводит только числа. Предусматривать обработку нечисловых строк в этой задаче необязательно.</p>
-            <input type="button" value="Решение" onclick="input_in_while()"></input>
+            <input type="button" value="Решение" onclick="inputNumber()"></input>
         </ul>
         <ul>
             <h2><a>Задача 12. Вывести простые числа</a></h2>
             <p>Напишите код, который выводит все простые числа из интервала от 2 до n.</p>
             <p>Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме себя и 1.</p>
-            <input type="button" value="Решение" onclick="simple_number()"></input>
+            <input type="button" value="Решение" onclick="checkNumberIsSimple()"></input>
         </ul>
     </div>
 

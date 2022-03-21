@@ -1,11 +1,11 @@
-function sign_number() {
-let number = prompt('Input number', '');
+function checkSignNumber() {
+    let number = prompt('Input number', '');
 
-if (number == 0) {
-    alert(0);
-} else if (number > 0) {
-    alert('1');
-} else {
-    alert('-1');
-}
+    if (number == 0) {
+        alert(0);
+    } else if (number > 0) {
+        alert('1');
+    } else {
+        alert('-1');
+    }
 }

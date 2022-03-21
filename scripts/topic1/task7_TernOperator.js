@@ -1,8 +1,8 @@
-function tern_operator() {
-let result;
-let a = prompt('Input first number', '');
-let b = prompt('Input second number', '');
+function compare() {
+    let result;
+    let a = prompt('Input first number', '');
+    let b = prompt('Input second number', '');
 
-result = (a + b < 4) ? 'Мало' : 'Много';
-alert(result);
+    result = (a + b < 4) ? 'Мало' : 'Много';
+    alert(result);
 }

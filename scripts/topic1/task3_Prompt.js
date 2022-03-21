@@ -1,4 +1,4 @@
-function prompt_and_alert() {
-let name = prompt('Whats your name?', '');
-alert(`Your name is ${name}`);
+function promptAndAlertName() {
+    let name = prompt('Whats your name?', '');
+    alert(`Your name is ${name}`);
 }

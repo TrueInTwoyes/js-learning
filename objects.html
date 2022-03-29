@@ -9,14 +9,17 @@
     <script src="scripts/objects/task2_checkIsEmpty.js"></script>
     <script src="scripts/objects/task3_salarySum.js"></script>
     <script src="scripts/objects/task4_multipleByTwo.js"></script>
+    <script src="scripts/objects/task5_calculator.js"></script>    
 </head>
 
 <body>
 
     <div class="sidenav">
-        <h2><a href = 'index.html'>Главная</a></h2>
-        <h2><a href = 'basic.html'>Основы JavaScript</a></h2>
-        <h2>Объекты: основы</h2>
+        <ul>
+            <li><a href = 'index.html'>Главная</a></li>
+            <li><a href = 'basic.html'>Основы JavaScript</a></li>
+            <li><a class="active" href = 'objects.html'>Объекты: основы</a></li>
+        </ul>
     </div>
     
     <div class="content">
@@ -49,6 +52,16 @@
             <h2><a>Задача 4. Умножаем все числовые свойства на 2</a></h2>
             <p>Задача: Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.</p>
             <input type="button" value="Решение" onclick="multiplyNumeric()"></input>
+        </ul>
+        <ul>
+            <h2><a>Задача 5. Создайте калькулятор</a></h2>
+            <p>Задача: Создайте объект calculator (калькулятор) с тремя методами</p>
+            <ol>
+                <li>read() (читать) запрашивает два значения и сохраняет их как свойства объекта</li>
+                <li>sum() (суммировать) возвращает сумму сохранённых значений</li>
+                <li>mul() (умножить) перемножает сохранённые значения и возвращает результат</li>
+            </ol>
+            <p><input type="button" value="Решение" onclick="calculate()"></input></p>
         </ul>
     </div>
 

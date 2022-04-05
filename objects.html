@@ -11,7 +11,8 @@
     <script src="scripts/objects/task4_multipleByTwo.js"></script>
     <script src="scripts/objects/task5_calculator.js"></script>    
     <script src="scripts/objects/task6_sequenceCalls.js"></script>   
-    <script src="scripts/objects/task7_calculator.js"></script>       
+    <script src="scripts/objects/task7_calculator.js"></script>  
+    <script src="scripts/objects/task8_accumulator.js"></script>    
 </head>
 
 <body>
@@ -80,6 +81,16 @@
                 <li>mul() возвращает произведение введённых свойств</li>
             </ol>
             <p><input type="button" value="Решение" onclick="calculateConstructor()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 8. Создаём Accumulator</a></h2>
+            <p>Задача: Напишите функцию-конструктор Accumulator(startingValue). Объект, который она создаёт, должен уметь следующее</p>
+            <ol>
+                <li>Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.</li>
+                <li>Метод read() использует prompt для получения числа и прибавляет его к свойству value.</li>
+            </ol>
+            <p>Таким образом, свойство value является текущей суммой всего, что ввёл пользователь при вызовах метода read(), с учётом начального значения startingValue.</p>
+            <input type="button" value="Решение" onclick="accumulate()"></input>
         </ul>
     </div>
 

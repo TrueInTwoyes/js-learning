@@ -1,5 +1,5 @@
 
-function calculate() {
+function calculateObj() {
     let calculator = {
         read() {
             this.firstNumber = +prompt('Input first number', 0);

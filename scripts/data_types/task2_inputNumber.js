@@ -13,4 +13,5 @@ function readNumber() {
             break;
         } 
     }
+    
 }

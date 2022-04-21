@@ -1,6 +1,6 @@
 function extractCurrencyValue(str) {
 
-    return str.substr(1, str.length);
+    return +str.substr(1, str.length);
     
 }
 

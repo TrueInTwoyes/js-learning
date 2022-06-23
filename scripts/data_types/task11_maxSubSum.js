@@ -6,14 +6,20 @@ function getMaxSubSum(arr) {
     for (let i = 0; i < arr.length; i++) {
         
         if (arr[i] > 0) {
+
             tempSum += arr[i];
+
         } else {
+
             tempSum = 0
             continue;
+
         }
 
         if (maxSum < tempSum) {
+
             maxSum = tempSum;
+
         }
 
     }
@@ -25,51 +31,46 @@ function getMaxSubSum(arr) {
 
 function checkMaxSubSum() {
     
-    let arrTest = [1, -2, 3, 4, -9, 6];
+
     let arr = [];
     let i = 0;
 
-    while(true) {      
+
+    let value = prompt('Enter "test" for testing \nOr enter a single number to continue entering the array')
+
+
+    while (true) {   
         
-        let value = prompt('Enter "test" for testing sort \nOr past your array with mask "[0, 1, 2, 3]" \nOr enter your numbers. For break inputing enter "stop"')
-        
-        if (value === 'test') {
+        if (value === 'test' && i === 0) {
             
+            let arrTest = [1, -2, 3, 4, -9, 6];
             alert('Max sum for subarray in test array [1, -2, 3, 4, -9, 6]: ' + getMaxSubSum(arrTest));
-        
-        }
-
-        if (isFinite(value)) {
-
-            arr[i] = value;
-            i++;
-        }
-
-        if (value.toLowerCase() === 'stop') {
-            
-            alert('Max sum for subarray in array ' + arr + ': ' + getMaxSubSum(arr));
             break;
 
         }
 
-        if (typeof(value) == String) {
-            
-            for (let num of object) {
-                
-            
-            }
-        
+        if (Number.isFinite(value)) {
+
+            arr[i] = value;
+            i++;
+            value = prompt('Your array: ' + arr + '\nEnter next number. For stop enter "stop" or not a number'); 
+
         }
-
-        if (value === null || value === '' || !isFinite(value)) {
-            
+    
+        if (value === null || value === '' || !isFinite(value) || value.toLowerCase() === 'stop') {
+                
             if (i != 0) {
-                getMaxSubSum(arr);
-            } else {
-                alert('You enter wrong value. Bye');
-                break;
-            }
 
+                alert('Max sum for subarray in array ' + arr + ': ' + getMaxSubSum(arr));
+                break;
+
+            } else {
+
+                alert('You enter not a number. Bye');
+                break;
+
+            }
+    
         }
     }
 }

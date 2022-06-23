@@ -14,6 +14,8 @@
     <script src="scripts/data_types/task7_truncateString.js"></script>
     <script src="scripts/data_types/task8_extractNumber.js"></script>
     <script src="scripts/data_types/task9_arrayOperations.js"></script>
+    <script src="scripts/data_types/task10_sumInArray.js"></script>
+    <script src="scripts/data_types/task11_maxSubSum.js"></script>
 </head>
 
 <body>
@@ -83,6 +85,24 @@
                 <li>Вставьте «Рэп» и «Регги» в начало массива.</li>
             </ol>
             <p><input type="button" value="Решение" onclick="arrayOperations()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 10. Сумма введённых чисел</a></h2>
+            <p>Задача: Напишите функцию sumInput(), которая</p>
+            <ol>
+                <li>Просит пользователя ввести значения, используя prompt и сохраняет их в массив.</li>
+                <li>Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».</li>
+                <li>Подсчитывает и возвращает сумму элементов массива.</li>
+            </ol>
+            <p>P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».</p>
+            <p><input type="button" value="Решение" onclick="sumInArray()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 11. Подмассив наибольшей суммы</a></h2>
+            <p>Задача: найти непрерывный подмассив в arr, сумма элементов в котором максимальна.</p>
+            <p>Функция getMaxSubSum(arr) должна возвращать эту сумму.</p>
+            <p>Если все элементы отрицательные – ничего не берём(подмассив пустой) и сумма равна «0»</p>
+            <p><input type="button" value="Решение" onclick="checkMaxSubSum()"></input></p>
         </ul>
     </div>
 

@@ -31,13 +31,10 @@ function getMaxSubSum(arr) {
 
 function checkMaxSubSum() {
     
-
     let arr = [];
     let i = 0;
 
-
     let value = prompt('Enter "test" for testing \nOr enter a single number to continue entering the array')
-
 
     while (true) {   
         
@@ -48,20 +45,12 @@ function checkMaxSubSum() {
             break;
 
         }
-
-        if (Number.isFinite(value)) {
-
-            arr[i] = value;
-            i++;
-            value = prompt('Your array: ' + arr + '\nEnter next number. For stop enter "stop" or not a number'); 
-
-        }
     
         if (value === null || value === '' || !isFinite(value) || value.toLowerCase() === 'stop') {
                 
             if (i != 0) {
 
-                alert('Max sum for subarray in array ' + arr + ': ' + getMaxSubSum(arr));
+                alert('Max sum for subarray in array [' + arr + '] : ' + getMaxSubSum(arr));
                 break;
 
             } else {
@@ -72,5 +61,14 @@ function checkMaxSubSum() {
             }
     
         }
+
+        if (isFinite(value)) {
+
+            arr[i] = Number(value);
+            i++;
+            value = prompt('Your array: [' + arr + ']\nEnter next number. For stop enter "stop" or not a number'); 
+
+        }
+
     }
 }

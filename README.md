@@ -1,1 +1,1 @@
-# js-learning
+#Hi! Enjoy my solution in the JavaScript learning project from learn.javascript.ru :monkey:

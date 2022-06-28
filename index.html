@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Learning JavaScript</title>
+    <script src="scripts/basic/task1_helloWordAlert.js"></script>
+    <script src="scripts/basic/task2_nameAlert.js"></script>
+    <script src="scripts/basic/task3_prompt.js"></script>
+    <script src="scripts/basic/task4_sum.js"></script>
+    <script src="scripts/basic/task5_ifElse.js"></script>
+    <script src="scripts/basic/task6_signNumber.js"></script>
+    <script src="scripts/basic/task7_ternOperator.js"></script>
+    <script src="scripts/basic/task8_someTernOperator.js"></script>
+    <script src="scripts/basic/task9_logicOperator.js"></script>
+    <script src="scripts/basic/task10_checkLogin.js"></script>   
+    <script src="scripts/basic/task11_inputInWhile.js"></script> 
+    <script src="scripts/basic/task12_simpleNumber.js"></script>
+    <script src="scripts/basic/task13_rewriteFunctions.js"></script>
+
+    <script src="scripts/objects/task1_simpleObject.js"></script>
+    <script src="scripts/objects/task2_checkIsEmpty.js"></script>
+    <script src="scripts/objects/task3_salarySum.js"></script>
+    <script src="scripts/objects/task4_multipleByTwo.js"></script>
+    <script src="scripts/objects/task5_calculator.js"></script>    
+    <script src="scripts/objects/task6_sequenceCalls.js"></script>   
+    <script src="scripts/objects/task7_calculator.js"></script>  
+    <script src="scripts/objects/task8_accumulator.js"></script>  
+
+    <script src="scripts/data_types/task1_sumNumber.js"></script>
+    <script src="scripts/data_types/task2_inputNumber.js"></script>
+    <script src="scripts/data_types/task3_randomGenerator.js"></script>
+    <script src="scripts/data_types/task4_randomIntegerGenerator.js"></script>
+    <script src="scripts/data_types/task5_firstLetterCapital.js"></script>
+    <script src="scripts/data_types/task6_checkSpam.js"></script>
+    <script src="scripts/data_types/task7_truncateString.js"></script>
+    <script src="scripts/data_types/task8_extractNumber.js"></script>
+    <script src="scripts/data_types/task9_arrayOperations.js"></script>
+    <script src="scripts/data_types/task10_sumInArray.js"></script>
+    <script src="scripts/data_types/task11_maxSubSum.js"></script>
+
+
 </head>
+
 
 <body>
 
@@ -26,6 +65,234 @@
         <p><a href = 'objects.html'>Объекты</a></p>
         <p><a href = 'data_types.html'>Типы данных</a></p>
 </div>
+
+<div class="content">
+    <h1>Решение задач блока "Основы JavaScript"</h1>
+    <ul>
+        <h2><a>Задача 1. Hello world</a></h2>
+        <p>Задача: вызвать алерт подключенный из внешнего скрипта</p>
+        <input type="button" value="Решение" onclick="alertHelloWorld()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 2. Работа с переменными</a></h2>
+        <p>Задача: присвоить переменной admin значение переменной name</p>
+        <input type="button" value="Решение" onclick="alertName()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 3. Взаимодействие: alert, prompt, confirm</a></h2>
+        <p>Задача: вызвать модальное окно где нужно вписать имя, затем вывести его в алерте</p>
+        <input type="button" value="Решение" onclick="promptAndAlertName()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 4. Сложение переменных</a></h2>
+        <p>Задача: исправить сложение перменных</p>
+        <input type="button" value="Решение" onclick="sum()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 5. Оператор if </a></h2>
+        <p>Задача: вызвать модальное окно где нужно вписать официальное название JavaScript. <br>В ответном алерте вывести результат: правильно/не правильно</p>
+        <input type="button" value="Решение" onclick="checkNameJS()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 6. Знак числа</a></h2>
+        <p>Задача: через конструкцию операторов if вывести в алерт 1 (если число > 0), -1 (если число < 0), 0 (если число = 0)</p>
+        <input type="button" value="Решение" onclick="checkSignNumber()"></input>
+    </ul>       
+    <ul>
+        <h2><a>Задача 7. Тернарный оператор</a></h2>
+        <p>Задача: переписать конструкцию if с использованием тернарного оператора</p>
+        <input type="button" value="Решение" onclick="compare()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 8. Несколько тернарных операторов</a></h2>
+        <p>Задача: переписать конструкцию if с использованием нескольких тернарных операторов</p>
+        <input type="button" value="Решение" onclick="checkLogin()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 9. Проверка значения из диапазона</a></h2>
+        <p>Задача: напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно</p>
+        <input type="button" value="Решение" onclick="compareAge()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 10. Проверка логина</a></h2>
+        <p>Задача: Напишите код, который будет спрашивать логин с помощью prompt.</p>
+        <p>Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».</p>
+
+        <p>Пароль проверять так:</p>
+        <p>Если введён пароль «Я главный», то выводить «Здравствуйте!»,</p>
+        <p>Иначе – «Неверный пароль»,</p>
+        <p>При отмене – «Отменено».</p>
+        <input type="button" value="Решение" onclick="checkLogin()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 11. Повторять цикл, пока ввод неверен</a></h2>
+        <p>Напишите цикл, который предлагает prompt ввести число, большее 100. Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее.</p>
+        <p>Цикл должен спрашивать число пока либо посетитель не введёт число, большее 100, либо не нажмёт кнопку Отмена (ESC).</p>
+        <p>Предполагается, что посетитель вводит только числа. Предусматривать обработку нечисловых строк в этой задаче необязательно.</p>
+        <input type="button" value="Решение" onclick="inputNumber()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 12. Вывести простые числа</a></h2>
+        <p>Напишите код, который выводит все простые числа из интервала от 2 до n.</p>
+        <p>Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме себя и 1.</p>
+        <input type="button" value="Решение" onclick="checkNumberIsSimple()"></input>
+    </ul>
+    <ul>
+        <h2><a>Задача 13. Перепишите функцию, используя оператор '?' или '||'</a></h2>
+        <p>Сделайте два варианта функции checkAge</p>
+        <p>Используя оператор ?</p>
+        <input type="button" value="Решение" onclick="checkAgeTern()"></input>
+        <p>Используя оператор ||</p>
+        <input type="button" value="Решение" onclick="checkAgeLogic()"></input>
+    </ul>
+
+    </div>
+
+    <div class="content">
+        <h1>Решение задач блока "Объекты: основы"</h1>
+        <ul>
+            <h2><a>Задача 1. Привет, object</a></h2>
+            <p>Задача: Напишите код, выполнив задание из каждого пункта отдельной строкой</p>
+            <ol>
+                <li>Создайте пустой объект user.</li>
+                <li>Добавьте свойство name со значением John.</li>
+                <li>Добавьте свойство surname со значением Smith.</li>
+                <li>Измените значение свойства name на Pete.</li>
+                <li>Удалите свойство name из объекта.</li>
+            </ol>
+            <p><input type="button" value="Решение" onclick="createAndModifyUserObject()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 2. Проверка на пустоту</a></h2>
+            <p>Задача: Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false</p>
+            <input type="button" value="Решение" onclick="checkIsEmpty()"></input>
+        </ul>
+        <ul>
+            <h2><a>Задача 3. Сумма свойств объекта</a></h2>
+            <p>Задача: У нас есть объект, в котором хранятся зарплаты нашей команды.</p>
+            <p>Напишите код для суммирования всех зарплат и сохраните результат в переменной sum.</p>
+            <p>Должно получиться 390. Если объект salaries пуст, то результат должен быть 0.</p>
+            <input type="button" value="Решение" onclick="salarySym()"></input>
+        </ul>
+        <ul>
+            <h2><a>Задача 4. Умножаем все числовые свойства на 2</a></h2>
+            <p>Задача: Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2</p>
+            <input type="button" value="Решение" onclick="multiplyNumeric()"></input>
+        </ul>
+        <ul>
+            <h2><a>Задача 5. Создайте калькулятор</a></h2>
+            <p>Задача: Создайте объект calculator (калькулятор) с тремя методами</p>
+            <ol>
+                <li>read() (читать) запрашивает два значения и сохраняет их как свойства объекта</li>
+                <li>sum() (суммировать) возвращает сумму сохранённых значений</li>
+                <li>mul() (умножить) перемножает сохранённые значения и возвращает результат</li>
+            </ol>
+            <p><input type="button" value="Решение" onclick="calculateObj()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 6. Цепь вызовов</a></h2>
+            <p>Задача: ladder (лестница) – объект, который позволяет подниматься вверх и спускаться</p>
+            <p>Измените код методов up, down и showStep таким образом, чтобы их вызов можно было сделать по цепочке, например так: ladder.up().up().down().showStep()</p>
+            <input type="button" value="Решение" onclick="movingLadder()"></input>
+        </ul>
+        <ul>
+            <h2><a>Задача 7. Создание калькулятора при помощи конструктора</a></h2>
+            <p>Задача: Создайте функцию-конструктор Calculator, который создаёт объекты с тремя методами</p>
+            <ol>
+                <li>read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта</li>
+                <li>sum() возвращает сумму введённых свойств</li>
+                <li>mul() возвращает произведение введённых свойств</li>
+            </ol>
+            <p><input type="button" value="Решение" onclick="calculateConstructor()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 8. Создаём Accumulator</a></h2>
+            <p>Задача: Напишите функцию-конструктор Accumulator(startingValue). Объект, который она создаёт, должен уметь следующее</p>
+            <ol>
+                <li>Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.</li>
+                <li>Метод read() использует prompt для получения числа и прибавляет его к свойству value.</li>
+            </ol>
+            <p>Таким образом, свойство value является текущей суммой всего, что ввёл пользователь при вызовах метода read(), с учётом начального значения startingValue.</p>
+            <input type="button" value="Решение" onclick="accumulate()"></input>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Решение задач блока "Типы данных"</h1>
+        <ul>
+            <h2><a>Задача 1. Сумма пользовательских чисел</a></h2>
+            <p>Задача: Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.</p>
+            <p><input type="button" value="Решение" onclick="sumNumber()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 2. Ввод числового значения</a></h2>
+            <p>Задача: Создайте функцию readNumber, которая будет запрашивать ввод числового значения до тех пор, пока посетитель его не введёт. Функция должна возвращать числовое значение.</p>
+            <p>Также надо разрешить пользователю остановить процесс ввода, отправив пустую строку или нажав «Отмена». В этом случае функция должна вернуть null.</p>
+            <p><input type="button" value="Решение" onclick="readNumber()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 3. Случайное число от min до max</a></h2>
+            <p>Задача: Напишите функцию random(min, max), которая генерирует случайное число с плавающей точкой от min до max (но не включая max).</p>
+            <p><input type="button" value="Решение" onclick="randomizer()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 4. Случайное целое число от min до max</a></h2>
+            <p>Задача: Напишите функцию randomInteger(min, max), которая генерирует случайное целое (integer) число от min до max (включительно).</p>
+            <p><input type="button" value="Решение" onclick="randomizerInteger()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 5. Сделать первый символ заглавным</a></h2>
+            <p>Задача: Напишите функцию ucFirst(str), возвращающую строку str с заглавным первым символом.</p>
+            <p><input type="button" value="Решение" onclick="setFirstCapitalLetter()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 6. Проверка на спам</a></h2>
+            <p>Задача: Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false. Функция должна быть нечувствительна к регистру</p>
+            <p><input type="button" value="Решение" onclick="checkTextForSpam()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 7. Усечение строки</a></h2>
+            <p>Задача: Создайте функцию truncate(str, maxlength), которая проверяет длину строки str и, если она превосходит maxlength, заменяет конец str на "…", так, чтобы её длина стала равна maxlength.</p>
+            <p>Результатом функции должна быть та же строка, если усечение не требуется, либо, если необходимо, усечённая строка.</p>
+            <p><input type="button" value="Решение" onclick="truncateString()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 8. Выделить число</a></h2>
+            <p>Задача: Есть стоимость в виде строки "$120". То есть сначала идёт знак валюты, а затем – число.</p>
+            <p>Результатом функции должна быть та же строка, если усечение не требуется, либо, если необходимо, усечённая строка. Создайте функцию extractCurrencyValue(str), которая будет из такой строки выделять числовое значение и возвращать его.</p>
+            <p><input type="button" value="Решение" onclick="extractCurrencyValueFromString()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 9. Операции с массивами</a></h2>
+            <p>Задача: Давайте произведём 5 операций с массивом.</p>
+            <ol>
+                <li>Создайте массив styles с элементами «Джаз» и «Блюз».</li>
+                <li>Добавьте «Рок-н-ролл» в конец.</li>
+                <li>Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен работать для массивов с любой длиной.</li>
+                <li>Удалите первый элемент массива и покажите его.</li>
+                <li>Вставьте «Рэп» и «Регги» в начало массива.</li>
+            </ol>
+            <p><input type="button" value="Решение" onclick="arrayOperations()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 10. Сумма введённых чисел</a></h2>
+            <p>Задача: Напишите функцию sumInput(), которая</p>
+            <ol>
+                <li>Просит пользователя ввести значения, используя prompt и сохраняет их в массив.</li>
+                <li>Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».</li>
+                <li>Подсчитывает и возвращает сумму элементов массива.</li>
+            </ol>
+            <p>P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».</p>
+            <p><input type="button" value="Решение" onclick="sumInArray()"></input></p>
+        </ul>
+        <ul>
+            <h2><a>Задача 11. Подмассив наибольшей суммы</a></h2>
+            <p>Задача: найти непрерывный подмассив в arr, сумма элементов в котором максимальна.</p>
+            <p>Функция getMaxSubSum(arr) должна возвращать эту сумму.</p>
+            <p>Если все элементы отрицательные – ничего не берём(подмассив пустой) и сумма равна «0»</p>
+            <p><input type="button" value="Решение" onclick="checkMaxSubSum()"></input></p>
+        </ul>
+    </div>
 
 
 </body>

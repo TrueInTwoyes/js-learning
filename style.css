@@ -2,43 +2,6 @@
     font-family: Arial;
 }
 
-/* Стиль боковой навигации */
-.sidenav {
-    height: 100%;
-    width: 230px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #f3f3f3;
-    overflow-x: hidden;
-}
-
-/* Боковые навигационные табы' */
-.sidenav ul a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.sidenav ul a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.sidenav li a {
-    color: #000000;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-} 
-
-/* Изменение цвета при наведении */
-.sidenav li:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-
 /* Стиль содержимого */
 .content {
     margin-left: 250px;

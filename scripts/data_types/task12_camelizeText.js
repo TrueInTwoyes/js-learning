@@ -1,16 +1,14 @@
 function camelize(str) {
-    
-    let arr = str.split('-');
-    arr.forEach(word => {
-        word[0].toUpperCase();
-        camelStr = arr.join();
-    });
 
-    return camelStr;
+    return str
+        .split('-')
+        .map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1))
+        .join('');
 }
 
 function checkCamelize() {
 
-    alert(camelize('my-short-string'));
+    let check = prompt('my-short-string -> ' + camelize('my-short-string') + '\ninput your words for camelCase with "-"');
+    alert(check + " -> " + camelize(check));
 
 }
